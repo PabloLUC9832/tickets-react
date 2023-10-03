@@ -75,7 +75,10 @@ const bookingMachine =
         },
         passengers: {
             on: {
-                DONE: "tickets",
+                DONE: {
+                    target: "tickets",
+                    cond: "moreThanOnePassenger",
+                },
                 CANCEL: {
                     target:"initial",
                     actions: 'cleanContext',
@@ -98,6 +101,11 @@ const bookingMachine =
             passengers: [],
         })
     },
+    guards: {
+        moreThanOnePassenger: (context) => {
+           return context.passengers.length > 0;
+        }
+    }
 });
 
 export default bookingMachine;
