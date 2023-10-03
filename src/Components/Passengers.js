@@ -18,6 +18,8 @@ export const Passengers = ({ state, send }) => {
     changeValue('');
   }
 
+  const { passengers } = state.context;
+
   return (
     <form onSubmit={submit} className='Passengers'>
       <p className='Passengers-title title'>Agrega a las personas que van a volar ✈️</p>
