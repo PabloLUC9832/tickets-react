@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/tickets-react/static/css/main.69d5cac5.css",
+    "main.js": "/tickets-react/static/js/main.d203e305.js",
+    "static/js/787.e8ffdc85.chunk.js": "/tickets-react/static/js/787.e8ffdc85.chunk.js",
+    "static/media/background-travel-2.jpg": "/tickets-react/static/media/background-travel-2.1b3bc05ab3ab53a29ab2.jpg",
+    "index.html": "/tickets-react/index.html",
+    "main.69d5cac5.css.map": "/tickets-react/static/css/main.69d5cac5.css.map",
+    "main.d203e305.js.map": "/tickets-react/static/js/main.d203e305.js.map",
+    "787.e8ffdc85.chunk.js.map": "/tickets-react/static/js/787.e8ffdc85.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.69d5cac5.css",
+    "static/js/main.d203e305.js"
+  ]
+}
