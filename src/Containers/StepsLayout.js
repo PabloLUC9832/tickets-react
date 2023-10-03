@@ -5,21 +5,21 @@ import { Passengers } from '../Components/Passengers';
 import { Tickets } from '../Components/Tickets';
 import './StepsLayout.css';
 
-//export const StepsLayout = ({ state, send }) => {
-export const StepsLayout = (props) => {
-    /*
+export const StepsLayout = ({ state, send }) => {
+//export const StepsLayout = (props) => {
+
     const renderContent = () => {
         if(state.matches('initial')) return <Welcome send={send}/>;
-        if(state.matches('search')) return <Search send={send}/>;
+        if(state.matches('search')) return <Search state={state} send={send}/>;
         if(state.matches('tickets')) return <Tickets send={send}/>;
-        if(state.matches('passengers')) return <Passengers send={send}/>;
+        if(state.matches('passengers')) return <Passengers state={state} send={send}/>;
         return null;
     };
-*/
+
     return (
         <div className='StepsLayout'>
-            {/* {renderContent()} */}
-            { props.children }
+            {renderContent()}
+            {/* props.children */}
         </div>
     );
 };
